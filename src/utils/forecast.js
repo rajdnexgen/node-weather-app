@@ -20,7 +20,7 @@ const url = `http://api.weatherstack.com/current?access_key=5273e672c1acd68bdf6b
             //     feelslike: body.current.feelslike,
             //     precipitation: body.current.precip,
             // })
-            callback(undefined, `${data.current.weather_descriptions[0]}. It is currently ${data.current.temperature} degrees out but feels like ${data.current.feelslike} degrees. There is a ${data.current.precip}% chance of rain.`)
+            callback(undefined, `${data.current.weather_descriptions[0]}. It is currently ${data.current.temperature} degrees out but feels like ${data.current.feelslike} degrees. There is a ${data.current.precip}% chance of rain. The humidity is ${data.current.humidity}%.`)
         }
     })
 }
